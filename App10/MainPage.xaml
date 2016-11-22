@@ -1,0 +1,21 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ModelView="using:App10.ModelView"
+    x:Class="App10.MainPage"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <ModelView:SongViewModel/>
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="239,138,0,0" TextWrapping="Wrap" Text="Enter song" VerticalAlignment="Top" Height="37" Width="101"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="24,21,0,0" TextWrapping="Wrap" Text="Playlist" VerticalAlignment="Top" Height="32" Width="124"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="240,197,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="-0.074,0.656" Height="39"/>
+
+    </Grid>
+</Page>
