@@ -11,7 +11,7 @@ namespace App10.Model
     {
         public SongList() : base()
         {
-            Song song1 = new Song("Get up", "Chinese man", "Roskilde14");
+                Song song1 = new Song("Get up", "Chinese man", "Roskilde14");
         }
 
     }

@@ -13,10 +13,10 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="239,138,0,0" TextWrapping="Wrap" Text="Enter song" VerticalAlignment="Top" Height="37" Width="101"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="239,138,0,0" TextWrapping="Wrap" Text="" PlaceholderText="Enter Song" VerticalAlignment="Top" Height="37" Width="101"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="24,21,0,0" TextWrapping="Wrap" Text="Playlist" VerticalAlignment="Top" Height="32" Width="124"/>
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="240,197,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="-0.074,0.656" Height="39"/>
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="65" Margin="44,78,0,0" VerticalAlignment="Top" Width="180" ItemsSource="{Binding SongList1}"/>
-
+        
     </Grid>
 </Page>
