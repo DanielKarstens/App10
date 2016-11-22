@@ -18,6 +18,10 @@ namespace App10.ModelView
             this.execute = execute;
         }
 
+        public AddSongCommand()
+        {
+        }
+
         public bool CanExecute(object parameter)
         {
             return true;

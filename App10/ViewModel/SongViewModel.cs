@@ -11,6 +11,8 @@ namespace App10.ModelView
 
     class SongViewModel : INotifyPropertyChanged
     {
+        #region PropertyChanged implementation
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyname)
@@ -22,7 +24,18 @@ namespace App10.ModelView
 
 
         }
+        #endregion
+
+        public SongList SongList1 { get; set; }
+
         public AddSongCommand AddSongCommand { get; set;}
+
+        public SongViewModel()
+        {
+            SongList Songlist1 = new SongList();
+            AddSongCommand AddS1 = new AddSongCommand();
+            
+        }
 
     }
 }
